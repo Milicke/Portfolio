@@ -1,0 +1,934 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testx {
+  margin-top: 120px;
+}
+
+.recipesCnt {
+  min-height: 70vh;
+  max-height: 70vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #151320;
+}
+
+.recipesCnt .recipes {
+  position: relative;
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.recipesCnt .recipes .reCard {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #0d0b16;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.recipesCnt .recipes .reCard:hover {
+  height: 420px;
+}
+
+.recipesCnt .recipes .reCard:hover .reCnt {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.recipesCnt .recipes .reCard .reImg {
+  position: relative;
+  min-width: 260px;
+  min-height: 140px;
+  overflow-y: hidden;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipesCnt .recipes .reCard .reImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.recipesCnt .recipes .reCard .reCnt {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ebbb37;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.recipesCnt .recipes .reCard .reCnt h3 {
+  overflow: hidden;
+}
+
+.recipesCnt .recipes .reCard .reCnt ul {
+  text-align: start;
+  font-size: .8em;
+  padding-top: 0%;
+}
+
+.recipesCnt .recipes .reCard .reCnt .startOf {
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.recipesCnt .recipes .reCard .reCnt p {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*-------------------------- NAVBAR --------------------------*/
+.navbar {
+  padding: 1.2rem 0;
+  background: #0d0b16;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.navbar .navbar-toggler {
+  margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-item a {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+  color: #ebbb37;
+  border-bottom: 1px solid #ebbb37;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.navbar .navbar-nav .nav-item:last-child a {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item:last-child a:hover {
+  color: #eb8e37;
+  border-bottom: 1px solid #eb8e37;
+}
+
+.navCont {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 1.5rem;
+  height: .2rem;
+  background-color: #fff;
+  margin: .375rem 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+  transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+  -moz-transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+  -ms-transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+  -o-transform: rotate(-45deg) translate(-0.5rem, 0.3rem);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+  transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+  -moz-transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+  -ms-transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+  -o-transform: rotate(45deg) translate(-0.4rem, -0.4rem);
+}
+
+/*------------X-------------- NAVBAR --------------X------------*/
+/*-------------------------- SLIKA NA POCETKU --------------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.startImg {
+  background-image: url("../images/slika1.jpg");
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.imgText {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70vw;
+  padding: 20px;
+  text-align: center;
+}
+
+.imgText h1 {
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.imgText h2 {
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+/*------------X-------------- SLIKA NA POCETKU -------------X-------------*/
+/*-------------------------- SEKCIJA SA CLANOVIMA TIMA --------------------------*/
+.areaMem {
+  position: relative;
+}
+
+.areaMem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ebbb37), to(#eb8e37));
+  background: linear-gradient(#ebbb37, #eb8e37);
+  -webkit-clip-path: circle(30% at right 70%);
+          clip-path: circle(30% at right 70%);
+}
+
+.areaMem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb8e37), to(#ebbb37));
+  background: linear-gradient(#eb8e37, #ebbb37);
+  -webkit-clip-path: circle(20% at 10% 10%);
+          clip-path: circle(20% at 10% 10%);
+}
+
+.areaMem .members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #0d0b16;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.areaMem .members .teamCnt {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.areaMem .members .teamCnt .teamCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.areaMem .members .teamCnt .teamCard .tcCnt {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: .5;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.areaMem .members .teamCnt .teamCard .tcCnt .teamImg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.areaMem .members .teamCnt .teamCard .tcCnt .teamImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.areaMem .members .teamCnt .teamCard .tcCnt .teamTxt h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.areaMem .members .teamCnt .teamCard .tcCnt .teamTxt h3 span {
+  font-size: .8rem;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.areaMem .members .teamCnt .teamCard:hover .tcCnt {
+  opacity: 1;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+}
+
+.areaMem .members .teamCnt .teamCard .teamIc {
+  overflow-y: hidden;
+  position: absolute;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+}
+
+.areaMem .members .teamCnt .teamCard .teamIc li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -o-transform: translateY(40px);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition-delay: calc(.1s * var(--i));
+          transition-delay: calc(.1s * var(--i));
+  opacity: 0;
+}
+
+.areaMem .members .teamCnt .teamCard .teamIc li a {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.areaMem .members .teamCnt .teamCard:hover .teamIc li {
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+/*------------X-------------- SEKCIJA SA CLANOVIMA TIMA -------------X-------------*/
+/*-------------------------- SEKCIJA SA OBJAVAMA --------------------------*/
+.postTitle {
+  background: #151320;
+  color: #FFF;
+  padding: 3rem 0 0 0;
+}
+
+.postTitle h3 {
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.posts {
+  background-color: #151320;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.posts .cards {
+  padding: 40px;
+  grid-gap: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.posts .cards .col-md-4 {
+  padding: 0;
+  width: 400px;
+}
+
+.posts .cards .nemanje {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: 400;
+  overflow-y: hidden;
+}
+
+.posts .cards .card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.posts .cards .card .postCnt {
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.posts .cards .card .postCnt:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.posts .cards .card .postCnt img {
+  width: 100%;
+  height: 245.91px;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.posts .cards .card .details {
+  padding: 20px 10px;
+}
+
+.posts .cards .card .details h3 {
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.posts .cards .card .details p {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.paginacija {
+  padding-bottom: 2rem;
+  background: #151320;
+}
+
+.paginacija .pagination .page-item:first-child a {
+  border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;
+}
+
+.paginacija .pagination .page-item:last-child a {
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+}
+
+.paginacija .pagination .page-item a {
+  border: 2px solid #fff;
+  color: white;
+  background: #151320;
+}
+
+/*------------X-------------- SEKCIJA SA OBJAVAMA -------------X-------------*/
+/*-------------------------- FOOTER --------------------------*/
+footer {
+  margin-top: 30px;
+  background-color: #0d0b16;
+  margin-bottom: -50px;
+}
+
+.pt-5 {
+  margin: 0;
+}
+
+.footerHeader {
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  font-size: 1.75vw;
+  color: #f1f1f1;
+}
+
+.footerUl {
+  font-family: 'Nunito Sans', sans-serif;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerUl .footerLi {
+  font-family: 'Nunito Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: hidden;
+}
+
+.footerUl .footerLi .footerLink {
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  color: #ecf0f1;
+}
+
+.footerUl .footerLi .footerLink:hover {
+  text-decoration: none;
+  color: #ebbb37;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+@media only screen and (max-width: 750px) {
+  .footerHeader {
+    font-size: 5vw;
+  }
+  .footerLink {
+    font-size: 3vw;
+  }
+}
+
+/*------------X-------------- FOOTER -------------X-------------*/
+.forma {
+  background: url(../images/pozadinalogin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  margin-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-box {
+  width: 380px;
+  height: auto;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(0, 0, 0, 0.459);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 3vh;
+  text-align: center;
+}
+
+.Lnaslov {
+  overflow: hidden;
+  text-align: center;
+  font-size: 7vh;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20vh;
+  border: 0.3vh solid #fff;
+}
+
+.input-container:first-child {
+  margin-right: 10px;
+}
+
+.input-container i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  color: #fff;
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+  border-right: 0.3vh solid #fff;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.upload-box {
+  color: #6c757d;
+  font-size: 1rem;
+  background: transparent;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  outline: none;
+}
+
+::-webkit-file-upload-button {
+  color: #151320;
+  background: #fff;
+  padding: 10px;
+  border: none;
+  -webkit-box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.5);
+  outline: none;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+::-webkit-file-upload-button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+textarea {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff;
+  padding: .5rem;
+}
+
+.dugme {
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20vh;
+  background-color: transparent;
+  border: 0.3vh solid #fff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.dugme:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.imeprezime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*
+#subject{
+  background: transparent;
+  border-radius: 2vh;
+  border: 0.3vh solid $bela;
+  width: 100%;
+  height: 10vh;
+}
+*/
+.testx {
+  margin-top: 120px;
+}
+
+.adminAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adminAdd a {
+  font-size: 3rem;
+  color: #eb8e37;
+  text-align: center;
+  color: #fff;
+  height: 3.5rem;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.adminAdd span {
+  color: white;
+}
+
+.adminCreate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.adminFunction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  overflow: hidden;
+  min-height: 2rem;
+}
+
+.adminFunction a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adminFunction a i {
+  padding-right: .5rem;
+  font-size: 1.5rem;
+}
+
+.adminFunction a:last-child {
+  margin-left: 1rem;
+}
+
+/*---------------------------------- SCROLLBAR --------------------------------*/
+/* Sirina */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Traka */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Deo za prevlacenje */
+::-webkit-scrollbar-thumb {
+  background: #ebbb37;
+  border-radius: 10px;
+}
+
+/* Deo za prevlacenje on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eb8e37;
+}
+
+/*-------------------x--------------- SCROLLBAR -----------------x---------------*/
+/*# sourceMappingURL=style.css.map */

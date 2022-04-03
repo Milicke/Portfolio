@@ -1,0 +1,133 @@
+@mixin flexCentar()
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+//pocetno podesavanje
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+////////////////////////////////
+.login {
+    height: 90vh;
+    width: 100%;
+    @include flexCentar();
+    text-align: center;
+    background-image: url("../media/registracija.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        color: $plava;
+        font-size: 35px;
+        text-align: center;
+    }
+    .forma {
+        background: rgba($siva, 0.8);
+        //background: linear-gradient(90deg, rgba(92,82,255,1) 0%, rgba(31,112,111,1) 49%, rgba(19,49,56,1) 100%);
+        box-shadow: 0 9px 50px hsla(0, 0%, 0%, 0.31);
+        padding: 30px 70px 40px;
+        border-radius: 5px;
+        h1 {
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .unos {
+            background: #fff;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            display: flex;
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 10px 3px 0 10px;
+            }
+        }
+        
+        .upozorenje{
+            visibility: hidden;
+            width: 325px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        .form-unos {
+            width: 240px;
+            height: 50px;
+            padding: 15px;
+            width: 250px;
+            font-size: 16px;
+            font-family: 'Abel', sans-serif;
+            color: #5E6472;
+            outline: none;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            transition: 0.2s linear;
+
+            &:focus {
+                margin-left: -3px;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+
+        .submit {
+            width: 150px;
+            height: 50px;
+            color: $plava;
+            background-color: $crna;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 18px;
+            &:hover {
+                background-color: $more;
+                color: white;
+                transition: all .4s ease-in-out;
+            }
+        }
+
+        h6 {
+            color: white;
+            font-size: 15px;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .imeprezime {
+            display: flex;
+
+            .form-unos {
+                width: 120px;
+                &:focus {
+                    margin-right:3px;
+                }
+            }
+
+            .unos {
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

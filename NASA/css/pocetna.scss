@@ -1,0 +1,468 @@
+@import url("registracija.css");
+@import url("alert.css");
+@import url("rang_lista.css");
+
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+//pocetno podesavanje
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.header {
+    padding: 10px;
+    background-color: $siva;
+    h1 {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        color: $plava;
+        text-align: center;
+    }
+    nav {
+        .nav-item {
+            width: 150px;
+            text-align: center;
+            border-radius: 16px;
+        }
+        .nav-link {
+            color: $plava;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 13px 22px;
+            margin-right: 20px;
+            margin-bottom: 0px;
+            font-weight: bold;
+            border-radius: 10px;
+            &:hover {
+                background: $more;
+                //color: $plava;
+                transition: all 300ms ease-in-out;
+            }
+        }
+        .navbar-nav {
+            margin: 0 auto 0 0;
+            #istaknuto {
+                padding: 12px 7px;
+                background-color: $plava;
+                color: $siva;
+                border: 1px solid $plava;
+                &:hover {
+                    background-color: inherit;
+                    color:$plava;
+                    border: 1px solid $plava;
+                }
+            }
+        }
+        .lMargina:first-child {
+            margin-left: 20px;
+        }
+    }
+}
+
+.borderWhite {
+    border: 1px solid white;
+    //color: white;
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $plava;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-toggler {
+    margin-bottom: 20px;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.d-block {
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.centar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    overflow-y: scroll;
+    max-height: 80%;
+    //padding: 25px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $bela;
+    padding: 25px 50px;
+    max-height: auto;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: $crna;
+        &:hover {
+            color: $more;
+        }
+    }
+    .dugmici {
+        display: flex;
+        a {
+            margin-right: 20px;
+            .klik {
+                padding: 10px 25px;
+                background-color: $more;
+                border: 1px solid $more;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+            .klik:hover {
+                border: 1px solid $more;
+                color: $more;
+                background-color: inherit;
+                transition: .4s;
+                -webkit-transition: .4s;
+                -moz-transition: .4s;
+                -ms-transition: .4s;
+                -o-transition: .4s;
+            }
+            //.klik:last-child {}
+        }
+    }
+}
+
+.klik {
+    padding: 10px 25px;
+    //margin-left: 25px;
+    background-color: $more;
+    border: 1px solid $more;
+    margin-right: 20px;
+}
+
+.klik:hover {
+    border: 1px solid $more;
+    color: $more;
+    background-color: inherit;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    /*a:hover {
+        color: $more;
+    }*/
+}
+/////////////////////////////////////////////////////////////////////////////
+.sectiontitle {
+    h5 {
+        font-size: 3rem;
+        margin: 0 0 50px;
+    }
+    h6 {
+        font-size: 2rem;
+    }
+}
+
+#services {
+    text-align: center;
+    article {
+        //position: relative;
+        background-color: $siva;
+        color: white;
+        padding: 20px;
+        border: 1px solid;
+        border-color: $plava;
+        height: 100%;
+        &:hover {
+            color: #fff; 
+           //background-color: rgba(0,0,0,.02);
+        }
+        i {
+            margin-bottom: 30px; 
+            font-size: 3rem;
+            color: $plava;
+        }
+    }
+}
+
+.container {
+    padding: 80px 0;  
+}
+
+li {
+    list-style-type: none;
+}
+
+.takmicenja {
+    padding: 10px 25px;
+    //margin-left: 25px;
+    background-color: $plava;
+    border: 1px solid $plava;
+    margin-bottom: 0;
+    //position: absolute;
+    bottom: 0;
+    &:hover {
+        border: 1px solid $plava;
+        color: $plava;
+        background-color: inherit;
+        transition: .4s;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        /*a:hover {
+            color: $more;
+        }*/
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+.pobednici {
+    background-color: $siva;
+    color: #fff;
+    h4 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 80px 0 50px;
+    }
+}
+
+.table-dark {
+    background-color: $siva;
+}
+table {
+    tbody {
+        tr {
+            td {
+                justify-content: center;
+                align-items: center;
+                img {
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    border-bottom: 1px solid rgba(197, 198, 199, .4);
+}
+
+.nagrade {
+    padding: 30px 0;
+}
+
+.prikazNagrada {
+    padding: 30px 0;
+    h6 {
+        padding-bottom: 25px;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////
+.krajSajta {
+    padding: 80px 0;
+    h5 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.sponzori {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    justify-content: space-around;
+    img {
+        width: 20%;
+        height: auto;
+        margin-bottom: 25px;
+        border-radius: 20px;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+footer {
+    margin-top: 30px;
+    background-color: $siva;
+}
+
+.pt-5 {
+    margin: 0;
+}
+
+.footerHeader {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 1.75vw;
+    color: $bela;
+}
+
+.footerUl {
+    font-family: 'Nunito Sans', sans-serif;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerLi {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.footerLink {
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.3s;
+    color: #ecf0f1;
+    &:hover {
+        text-decoration: none;
+        color: $more;
+        transform: scale(1.1);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: $bela;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+@media only screen and (max-width: 990px) {
+    .header {
+        padding: 10px;
+        background-color: $siva;
+        h1 {
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 0;
+            color: $plava;
+            text-align: center;
+        }
+        nav {
+            .dMargina {
+                margin: 0 auto 10px;
+                border: 1px solid $plava;
+                background-color: $plava;
+            }
+            .nav-item {
+                width: 150px;
+                text-align: center;
+                border-radius: 16px;
+            }
+            .nav-link {
+                color: $plava;
+                background: rgba(0, 0, 0, 0.3);
+                padding: 13px 22px;
+                margin-right: 0px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                border-radius: 10px;
+                &:hover {
+                    background: $more;
+                    //color: $plava;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+            .navbar-nav {
+                margin: 0 auto 0 0;
+            }
+        }
+        .centar {
+            .dugmici {
+                a {
+                    .klik {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .prijave {
+            margin: 0 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        padding: 10px;
+        background-color: $siva;
+        h1 {
+            font-family: 'Nunito Sans', sans-serif;
+            margin: 0;
+            color: $plava;
+            text-align: center;
+        }
+        nav {
+            .nav-item {
+                width: 150px;
+                text-align: center;
+                border-radius: 16px;
+            }
+            .nav-link {
+                color: $plava;
+                background: rgba(0, 0, 0, 0.3);
+                padding: 13px 22px;
+                margin-right: 0px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                border-radius: 10px;
+                &:first-child {
+                    margin-top: 10px;
+                }
+                &:hover {
+                    background: $more;
+                    //color: $plava;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+            .navbar-nav {
+                margin: 0 auto 0 0;
+            }
+        }
+    }
+    .centar {
+        .dugmici {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a {
+                .klik {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .footerHeader {
+        font-size: 5vw;
+    }
+    .footerLink {
+        font-size: 3vw;
+    }
+}

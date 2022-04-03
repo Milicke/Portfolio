@@ -1,0 +1,70 @@
+.qna {
+  min-height: 100vh;
+  background-color: #1F2833;
+}
+
+.accordion {
+  background-color: #1F2833;
+  color: #66FCF1;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 2px solid #66FCF1;
+}
+
+.accordion:hover {
+  background-color: #1F2833;
+  color: #66FCF1;
+  border: 0 0 1px solid #1F2833;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #66FCF1;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active {
+  font-size: 30px;
+  background-color: #1F2833;
+  color: #66FCF1;
+  border-bottom: 2px solid #66FCF1;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 25px;
+  background-color: #1F2833;
+  color: #C5C6C7;
+  max-height: 0;
+  height: auto;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -ms-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  padding: 20px 0 0;
+  font-size: 20px;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #66FCF1;
+}
+/*# sourceMappingURL=qna.css.map */

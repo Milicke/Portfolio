@@ -1,0 +1,92 @@
+/* Izgled kartice --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.pozadina {
+  background-color: #45A29E;
+  min-height: 80vh;
+}
+
+.pozadina h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.pozadina .card {
+  background-color: inherit;
+  border: none;
+  height: 90%;
+  width: 83%;
+  margin: 25px auto 30px;
+}
+
+.pozadina .card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.pozadina .card .card-body {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 30px 20px;
+  background-color: #1F2833;
+  color: #C5C6C7;
+}
+
+.pozadina .card .card-body .pocetak {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pozadina .card .card-body h2 {
+  color: #C5C6C7;
+  font-size: 25px;
+}
+
+.pozadina .card .card-body h4 {
+  font-size: 20px;
+}
+
+.pozadina .card .card-body .btnF {
+  background-color: #66FCF1;
+  color: #1F2833;
+  font-weight: bold;
+  border: 1px solid #66FCF1;
+}
+
+.pozadina .card .card-body .btnF:hover {
+  background-color: inherit;
+  color: #66FCF1;
+}
+
+.pozadina .card .card-body form input {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #66FCF1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: inherit;
+}
+
+.pozadina .card .card-body form input:enabled {
+  background-color: #0B0C10;
+  color: #66FCF1;
+}
+
+.pozadina .card .card-body form .upozorenje {
+  visibility: hidden;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+.pozadina .card .card-body form .card-text {
+  color: #66FCF1;
+  margin-bottom: 20px;
+}
+
+.pozadina .card .card-body form p {
+  text-align: center;
+}
+/*# sourceMappingURL=tamicenja.css.map */

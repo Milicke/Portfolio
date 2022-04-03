@@ -1,0 +1,176 @@
+.unosTima {
+  min-height: 100vh;
+  background-image: url("../media/dodajTimbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.unosTima .wrapper {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+}
+
+.unosTima .wrapper h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.unosTima .wrapper form {
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border-right: 1px solid white;
+}
+
+.unosTima .wrapper form .unos {
+  background: #fff;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.unosTima .wrapper form .unos img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 3px 0 10px;
+}
+
+.unosTima .wrapper form .form-unos {
+  width: 240px;
+  height: 50px;
+  padding: 15px;
+  width: 250px;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.unosTima .wrapper form .form-unos:focus {
+  margin-left: -3px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.unosTima .wrapper form .submit {
+  width: 150px;
+  height: 50px;
+  color: #66FCF1;
+  background-color: #0B0C10;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.unosTima .wrapper form .submit:hover {
+  background-color: #45A29E;
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.unosTima .wrapper .prikazTim {
+  color: white;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.unosTima .wrapper .prikazTim p {
+  font-size: 20px;
+}
+
+.unosTima .wrapper #desni_div {
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.clanovi {
+  /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+  margin: 10px;
+  font-size: 1.5rem;
+  border: 2px solid #66FCF1;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.ime_clana {
+  color: #66FCF1;
+}
+
+.fa-trash-o {
+  font-size: 1.3rem;
+  color: #66FCF1;
+  margin: auto;
+  cursor: pointer;
+}
+
+.fa-trash-o:hover {
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.upozorenje {
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 770px) {
+  .unosTima .wrapper form {
+    border-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .unosTima {
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=dodajTim.css.map */

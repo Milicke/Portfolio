@@ -1,0 +1,132 @@
+.orgDogadjaj {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../media/dadajTimbg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.orgDogadjaj .forma {
+  background: rgba(31, 40, 51, 0.8);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 30px 70px 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.orgDogadjaj .forma h1 {
+  color: white;
+  margin-bottom: 35px;
+}
+
+.orgDogadjaj .forma .unos {
+  background: #fff;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orgDogadjaj .forma .unos img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 3px 0 10px;
+}
+
+.orgDogadjaj .forma .upozorenje {
+  visibility: hidden;
+  text-align: center;
+  font-size: 20px;
+}
+
+.orgDogadjaj .forma .form-unos {
+  width: 250px;
+  height: 50px;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.orgDogadjaj .forma .form-unos:focus {
+  margin-left: -3px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.orgDogadjaj .forma .submit {
+  width: 150px;
+  height: 50px;
+  color: #66FCF1;
+  background-color: #0B0C10;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.orgDogadjaj .forma .submit:hover {
+  background-color: #45A29E;
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.orgDogadjaj .forma h6 {
+  color: white;
+}
+
+.orgDogadjaj .forma h6 a {
+  text-decoration: none;
+}
+
+.orgDogadjaj .forma .imeprezime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.orgDogadjaj .forma .imeprezime .form-unos {
+  width: 200px;
+}
+
+.orgDogadjaj .forma .imeprezime .form-unos:focus {
+  margin-right: 3px;
+}
+
+.orgDogadjaj .forma .imeprezime .unos {
+  margin-right: 10px;
+}
+
+.orgDogadjaj .forma .imeprezime .unos:last-child {
+  margin-right: 0;
+}
+
+.orgDogadjaj .forma .sekcija-unos {
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  .orgDogadjaj .forma .imeprezime .form-unos {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=novDogadjaj.css.map */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<button id="pre">PREVIUS</button>
+	<button id="next">NEXT</button>
+
+	<p id="text"></p>
+
+	<script>
+		var page = 1;
+		var totalPages;
+		document.getElementById("next").addEventListener("click", () => {
+			if(page === totalPages) return;
+			Zahtev(page+1);
+			page++;
+		});
+		document.getElementById("pre").addEventListener("click", () => {
+			if(page === 1) return;
+			Zahtev(page-1);
+			page--;
+		});
+		function Zahtev(strana) {
+			var xml = new XMLHttpRequest();
+			xml.open("GET", "uzmiObjave.php?page=" + strana);
+			xml.onload = function() {
+				document.getElementById("text").innerText = 
+				this.responseText + "\n";
+				var json = JSON.parse(this.responseText);
+				totalPages = json.ukupnoStrana;
+			}
+			xml.send();
+		}
+		Zahtev(1);
+	</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+$plava: #00306e;
+$bela: #ffffff;
+header {
+    background-color: $plava;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    p {
+        margin: 0;
+        color: $bela;
+        padding: 20px;
+    }
+    p:first-child {
+        border-right: 1px solid white;
+    }
+}
+h1 {
+    color: $plava;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+
+        select {
+            margin-bottom: 10px;
+        }
+    }
+}
+.dugme {
+    width: 100px;
+    height: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+td {
+    
+}
+td {
+    width: 100px;
+    //display:flex;
+    //justify-content: center;
+    //align-items: center;
+    border: 1px solid black ;
+    img {
+        //width: 20vw;
+        height: 20vh;
+    }
+}
+thead {
+    background-color: $plava;
+    color: $bela;
+    font-weight: bold;
+    tr {
+        th {
+            border: 1px solid white;
+        }
+    }
+}
+
+.tekst {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: $plava;
+    height: 70px;
+    padding: 20px;
+    p {
+        float: left;
+        color: $bela;
+    }
+    a {
+        float: right;
+        color: $bela;
+        margin-right: 10px;
+    }
+}

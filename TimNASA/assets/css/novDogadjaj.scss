@@ -1,0 +1,122 @@
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+/////////////////////////////////////////////
+@mixin flexCentar() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/////////////////////////////////////////////
+.orgDogadjaj {
+    height: 100vh;
+    @include flexCentar();
+    background-image: url("../media/dadajTimbg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .forma {
+        background: rgba($siva, 0.8);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        padding: 30px 70px 40px;
+        border-radius: 5px;
+        //width: 550px;
+        text-align: center;
+        h1 {
+            color: white;
+            margin-bottom: 35px;
+        }
+        .unos {
+            background: #fff;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            display: flex;
+            img {
+                width: 30px;
+                height: 30px;
+                margin: 10px 3px 0 10px;
+            }
+        }
+        .upozorenje{
+            visibility: hidden;
+            //width: 396px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .form-unos {
+            width: 250px;
+            height: 50px;
+            padding: 15px;
+            font-size: 16px;
+            font-family: 'Abel', sans-serif;
+            color: #5E6472;
+            outline: none;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            transition: 0.2s linear;
+            &:focus {
+                margin-left: -3px;
+                transition: all .3s ease-in-out;
+            }
+        }
+        .submit {
+            width: 150px;
+            height: 50px;
+            color: $plava;
+            background-color: $crna;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            &:hover {
+                background-color: $more;
+                color: white;
+                transition: all .4s ease-in-out;
+            }
+        }
+        h6 {
+            color: white;
+            a {
+                text-decoration: none;
+            }
+        }
+        .imeprezime {
+            display: flex;
+            .form-unos {
+                width: 200px;
+                &:focus {
+                    margin-right: 3px;
+                }
+            }
+            .unos {
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .sekcija-unos {
+            width: 100%;
+            border-radius: 5px;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .orgDogadjaj
+    {
+        .forma{
+            .imeprezime{
+                .form-unos{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

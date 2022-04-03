@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.login {
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("../media/registracija.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  color: #66FCF1;
+  font-size: 35px;
+  text-align: center;
+}
+
+.login .forma {
+  background: rgba(31, 40, 51, 0.8);
+  -webkit-box-shadow: 0 9px 50px rgba(0, 0, 0, 0.31);
+          box-shadow: 0 9px 50px rgba(0, 0, 0, 0.31);
+  padding: 30px 70px 40px;
+  border-radius: 5px;
+}
+
+.login .forma h1 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.login .forma .unos {
+  background: #fff;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .forma .unos img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 3px 0 10px;
+}
+
+.login .forma .upozorenje {
+  visibility: hidden;
+  width: 325px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.login .forma .form-unos {
+  width: 240px;
+  height: 50px;
+  padding: 15px;
+  width: 250px;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: #5E6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.login .forma .form-unos:focus {
+  margin-left: -3px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.login .forma .submit {
+  width: 150px;
+  height: 50px;
+  color: #66FCF1;
+  background-color: #0B0C10;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.login .forma .submit:hover {
+  background-color: #45A29E;
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.login .forma h6 {
+  color: white;
+  font-size: 15px;
+}
+
+.login .forma h6 a {
+  text-decoration: none;
+}
+
+.login .forma .imeprezime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .forma .imeprezime .form-unos {
+  width: 120px;
+}
+
+.login .forma .imeprezime .form-unos:focus {
+  margin-right: 3px;
+}
+
+.login .forma .imeprezime .unos {
+  margin-right: 10px;
+}
+
+.login .forma .imeprezime .unos:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=registracija.css.map */

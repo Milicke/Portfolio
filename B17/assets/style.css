@@ -1,0 +1,105 @@
+header {
+  background-color: #00306e;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header p {
+  margin: 0;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header p:first-child {
+  border-right: 1px solid white;
+}
+
+h1 {
+  color: #00306e;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form div select {
+  margin-bottom: 10px;
+}
+
+.dugme {
+  width: 100px;
+  height: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+td {
+  width: 100px;
+  border: 1px solid black;
+}
+
+td img {
+  height: 20vh;
+}
+
+thead {
+  background-color: #00306e;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+thead tr th {
+  border: 1px solid white;
+}
+
+.tekst {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #00306e;
+  height: 70px;
+  padding: 20px;
+}
+
+footer p {
+  float: left;
+  color: #ffffff;
+}
+
+footer a {
+  float: right;
+  color: #ffffff;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

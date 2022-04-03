@@ -1,0 +1,3 @@
+K4CS2SSamsung S20+             Samsung             512MBIntel Core     20MGpixels144HZ     ./images/S20+.jpg             20000
+C2KL3CIphone 12                Iphone              2GB  Intel Core     50MGpixels144HZ     ./images/Iphone12.jpg            40000
+K4CS2SSamsung S20+             Samsung             512MBIntel Core     20MGpixels144HZ     ./images/S20+.jpg             20000

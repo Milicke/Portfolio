@@ -1,0 +1,80 @@
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+th {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: -5px;
+  color: blue;
+  text-decoration: underline;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  margin: 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: #000447;
+  padding: 10px;
+}
+
+.navbar a {
+  padding: 5px;
+  border: 1px solid white;
+  background-color: #0008a1;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  padding: 10px;
+  background-color: #737aff;
+  color: white;
+  margin: 0;
+}
+
+.grafikon {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.podaciIme {
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-collapse: collapse;
+}
+/*# sourceMappingURL=style.css.map */

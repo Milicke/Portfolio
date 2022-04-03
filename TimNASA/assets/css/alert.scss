@@ -1,0 +1,43 @@
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+////////////////////////////////////////////////////////
+.modal-content {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: inherit;
+}
+
+.modal-header {
+    background-color: $siva;
+    button {
+        color: $plava;
+        font-size: 30px;
+        &:hover {
+            color: $more;
+        }
+    }
+}
+
+.modal-footer {
+    background-color: $siva;
+    button {
+        color: $plava;
+        font-size: 20px;
+        &:hover {
+            color: $more;
+        }
+    }
+}
+
+.modal-body {
+    background-color: $siva;
+    color: $bela;
+    font-size: 20px;
+}

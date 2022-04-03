@@ -1,0 +1,148 @@
+@mixin flexCentar() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+/////////////////////////
+.unosTima {
+    min-height: 100vh;
+    background-image: url("../media/dodajTimbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+    @include flexCentar();
+    .wrapper {
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        background: rgba(0,
+        0,
+        0,
+        0.6);
+        border-radius: 10px;
+        padding: 30px;
+        width: 100%;
+        //@include flexCentar();
+        form {
+            text-align: center;
+            height: 100%;
+            @include flexCentar();
+            flex-direction: column;
+            padding: 30px;
+            border-right: 1px solid white;
+            .unos {
+                background: #fff;
+                margin-bottom: 8px;
+                border-radius: 5px;
+                display: flex;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 10px 3px 0 10px;
+                }
+            }
+            .form-unos {
+                width: 240px;
+                height: 50px;
+                padding: 15px;
+                width: 250px;
+                font-size: 16px;
+                font-family: 'Abel', sans-serif;
+                color: #5E6472;
+                outline: none;
+                border: none;
+                border-radius: 0px 5px 5px 0px;
+                transition: 0.2s linear;
+                &:focus {
+                    margin-left: -3px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+            .submit {
+                width: 150px;
+                height: 50px;
+                color: $plava;
+                background-color: $crna;
+                font-weight: bold;
+                border-radius: 5px;
+                margin-top: 10px;
+                &:hover {
+                    background-color: $more;
+                    color: white;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
+        .prikazTim {
+            color: white;
+            text-align: center;
+            flex-direction: column;
+            p {
+                font-size: 20px;
+            }
+        }
+        #desni_div {
+            overflow-y: auto;
+            max-height: 200px;
+        }
+    }
+}
+.clanovi{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    margin: 10px;
+    font-size: 1.5rem;
+    border: 2px solid #66FCF1;
+    border-radius:5px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .ime_clana{
+    color: #66FCF1;
+  }
+  
+  .fa-trash-o{
+    font-size: 1.3rem;
+    color: #66FCF1;
+    margin: auto;
+    cursor: pointer;
+  }
+  .fa-trash-o:hover{
+    color: red;
+    transition: 0.5s;
+  }
+  .upozorenje{
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+    visibility: hidden;
+  }
+
+@media only screen and (max-width: 770px) {
+    .unosTima {
+        .wrapper {
+            form {
+                border-right: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .unosTima {
+        padding: 30px;
+    }
+}

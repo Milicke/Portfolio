@@ -1,0 +1,70 @@
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+.qna {
+    min-height: 100vh;
+    background-color: $siva;
+}
+
+.accordion {
+    background-color: $siva;
+    color: $plava;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+    border-bottom: 2px solid $plava;
+    &:hover {
+        background-color: $siva;
+        color: $plava;
+        border: 0 0 1px solid $siva;
+    }
+    &:after {
+        content: '\002B';
+        color: $plava;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+}
+
+.active {
+    font-size: 30px;
+    background-color: $siva;
+    color: $plava;
+    border-bottom: 2px solid $plava;
+    &:after {
+        content: "\2212";
+    }
+}
+
+.panel {
+    padding: 0 25px;
+    background-color: $siva;
+    color: $bela;
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    p {
+        padding: 20px 0 0;
+        font-size: 20px;
+    }
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    border: 1px solid $plava;
+}

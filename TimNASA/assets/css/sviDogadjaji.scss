@@ -1,0 +1,82 @@
+//pocetne boje
+$crna: #0B0C10;
+$siva: #1F2833;
+$bela: #C5C6C7;
+$plava: #66FCF1;
+$more: #45A29E;
+
+/* Izgled kartice --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.pozadina {
+    background-color: $more;
+    min-height: 80vh;
+    h1 {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .card {
+        background-color: inherit;
+        border: none;
+        height: 90%;
+        margin: 25px auto 0;
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 30px 20px;
+            background-color: $siva;
+            color: $bela;
+            .pocetak {
+                justify-content: space-between;
+                align-items: center;
+            }
+            h2 {
+                color: $bela;
+            }
+            form {
+                input {
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 1px solid $plava;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    background-color: inherit;
+                    &:enabled {
+                        background-color: $crna;
+                        color: $plava;
+                    }
+                }
+                .upozorenje{
+                    visibility: hidden;
+                    text-align: center;
+                    color: red;
+                    font-size: 20px;
+                }
+
+                .card-text {
+                    color: $plava;
+                    margin-bottom: 20px;
+                }
+                p {
+                    text-align: center;
+                }
+                .btnC {
+                    display: flex;
+                    justify-content: space-around;
+                    .btnF {
+                        background-color: $plava;
+                        color: $siva;
+                        border: 1px solid $plava;
+                        &:hover {
+                            background-color: inherit;
+                            color: $plava;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

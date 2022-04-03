@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400&display=swap');
+$bojaLinka: rgb(235,
+187,
+55);
+$registar: rgb(235,
+142,
+55);
+$timPoz: #0d0b16;
+$pozadinaDva: #151320;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testx {
+    margin-top: 120px;
+}
+
+.recipesCnt {
+    min-height: 70vh;
+    max-height: 70vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $pozadinaDva;
+    .recipes {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .reCard {
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background: $timPoz;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            transition: .3s ease-in-out;
+            -webkit-transition: .3s ease-in-out;
+            -moz-transition: .3s ease-in-out;
+            -ms-transition: .3s ease-in-out;
+            -o-transition: .3s ease-in-out;
+            &:hover {
+                height: 420px;
+                .reCnt {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: 0px;
+                }
+            }
+            .reImg {
+                position: relative;
+                min-width: 260px;
+                min-height: 140px;
+                overflow-y: hidden;
+                z-index: 1;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+            }
+            .reCnt {
+                position: relative;
+                margin-top: -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color: $bojaLinka;
+                visibility: hidden;
+                opacity: 0;
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+                h3 {
+                    overflow: hidden;
+                }
+                ul {
+                    text-align: start;
+                    font-size: .8em;
+                    padding-top: 0%;
+                }
+                .startOf {
+                    margin-bottom: 0;
+                    text-align: start;
+                }
+                p {
+                    word-wrap: break-word;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
